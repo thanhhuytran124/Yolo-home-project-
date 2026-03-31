@@ -67,8 +67,6 @@ function updateFanUI(speed) {
 // ==================== LẤY DỮ LIỆU CLOUD ====================
 async function pollAdafruit() {
     if (!config.user || !config.key) return;
-
-    // Thêm fan-speed vào danh sách polling
     const feeds = ["temperature", "humidity", "light", "fan-speed"];
     for (let feed of feeds) {
         try {
@@ -87,8 +85,6 @@ async function pollAdafruit() {
         } catch (e) { console.error("Lỗi fetch feed " + feed, e); }
     }
 }
-
-// --- Các phần khác (Settings, Relay, Gauges) giữ nguyên logic cũ của bạn ---
 
 document.getElementById('settingsForm').addEventListener('submit', function(e) {
     e.preventDefault();
