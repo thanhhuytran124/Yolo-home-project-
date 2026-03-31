@@ -7,7 +7,7 @@ body {
   background-color: #eef2f7;
 }
 
-/* Sidebar (Thanh bên trái) */
+/* Sidebar */
 .sidebar {
   width           : 260px;
   background-color: #2294F2;
@@ -58,7 +58,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Nội dung chính */
 .main-content {
   flex      : 1;
   padding   : 40px 60px;
@@ -74,7 +73,6 @@ body {
   margin-top     : 20px;
 }
 
-/* Thẻ chứa đồng hồ - Ép kích thước bằng nhau */
 .gauge-card {
   background   : white;
   border-radius: 16px;
@@ -82,7 +80,7 @@ body {
   padding      : 25px;
   text-align   : center;
   width        : 300px;
-  min-height   : 340px; /* Chiều cao cố định để các card thẳng hàng */
+  min-height   : 340px; 
   display      : flex;
   flex-direction: column;
   justify-content: space-between;
@@ -100,7 +98,6 @@ body {
   margin-bottom: 5px;
 }
 
-/* Các vòng tròn đồng hồ - Ép kích thước vẽ đồng nhất */
 #gauge_temp, #gauge_humi, #gauge_light {
     width: 100%;    
     height: 200px;  
@@ -232,7 +229,7 @@ body {
   to { transform: scale(1); opacity: 1; }
 }
 
-/* ==================== RESPONSIVE (ĐIỆN THOẠI) ==================== */
+/* ==================== RESPONSIVE==================== */
 @media (max-width: 768px) {
   .sidebar { width: 80px; }
   .sidebar span { display: none; }
@@ -241,7 +238,6 @@ body {
   .gauge-card { width: 100%; min-height: 300px; }
 }
 
-/* Hiệu ứng quạt quay */
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
