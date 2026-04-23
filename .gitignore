@@ -1,0 +1,4 @@
+esp32/venv/
+.venv/
+env/
+venv/
