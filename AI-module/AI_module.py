@@ -76,7 +76,7 @@ class FaceRecognizer:
                 label_id, confidence = self.recognizer.predict(face_roi)
 
                 
-                name = self.label_map.get(label_id, "Unknown") if confidence > 75 else "Unknown"
+                name = self.label_map.get(label_id, "Unknown") if confidence < 90 else "Unknown"
                 
                 results_list.append({
                     "name": name,
