@@ -35,7 +35,7 @@ def get_faces_and_labels(faces_folder_path):
     return features, labels    
 
 print("Preparing images to train...")
-features, labels = get_faces_and_labels(r"C:\Document\HK252\OpenCV\Faces\train")
+features, labels = get_faces_and_labels(r"Faces\train")
 features = np.array(features, dtype= 'object')
 labels = np.array(labels)
 
